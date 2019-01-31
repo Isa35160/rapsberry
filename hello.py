@@ -34,7 +34,6 @@ def swicthOne(number, status):
     return render_template('base.html', status=status, number=number)
 
 
-
 @app.route('/leds/<status>')
 def switchAll(status):
     if status == 'on':
