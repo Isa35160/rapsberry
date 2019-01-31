@@ -12,10 +12,10 @@ GPIO.setup(15, GPIO.OUT)
 def hello_world():
     return 'Hello, World!'
 
+
 @app.route('/hello/<status>')
 def hello(status):
     return 'Hello %s' % status
-
 
 
 @app.route('/led/<number>/<status>')
@@ -29,19 +29,18 @@ def swicthOne(number, status):
     elif status == 'off' and number == '2':
         GPIO.output(15, GPIO.LOW)
 
-    return 'status %' % status, 'number %' % number
+    return 'status %s' % status, 'number %s' % number
 
 
+@app.route('/<status>')
+def switchAll(status):
+    if status == 'on':
+        GPIO.output(14, GPIO.HIGH)
+        GPIO.output(15, GPIO.HIGH)
+        print("Led ON")
+    elif status == 'off':
+        GPIO.output(14, GPIO.LOW)
+        GPIO.output(15, GPIO.LOW)
+        print("Led OFF")
 
-
-@app.route('/on')
-def on():
-    GPIO.output(14, GPIO.HIGH)
-    GPIO.output(15, GPIO.HIGH)
-    print("Led ON")
-
-@app.route('/off')
-def off():
-    GPIO.output(14, GPIO.LOW)
-    GPIO.output(15, GPIO.LOW)
-    print("Led OFF")
+    return 'status %s' % status
