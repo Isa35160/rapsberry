@@ -1,6 +1,8 @@
 from flask import Flask
 app = Flask(__name__)
 
+from flask import render_template
+
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -29,7 +31,8 @@ def swicthOne(number, status):
     elif status == 'off' and number == '2':
         GPIO.output(15, GPIO.LOW)
 
-    return 'status %s' % status, 'number %s' % number
+    return render_template('base.html', status=status, number=number)
+
 
 
 @app.route('/leds/<status>')
@@ -43,4 +46,4 @@ def switchAll(status):
         GPIO.output(15, GPIO.LOW)
         print("Led OFF")
 
-    return 'status %s' % status
+    return re
