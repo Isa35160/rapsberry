@@ -76,7 +76,6 @@
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hello.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="306">
+              <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -199,7 +198,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3762000" />
+    <option name="totallyTimeSpent" value="4117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -218,7 +217,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -268,8 +267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="306">
+          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="68" />
         </state>
       </provider>
     </entry>
