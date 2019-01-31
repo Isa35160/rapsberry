@@ -1,5 +1,5 @@
 from flask import Flask
-app = Flask(__status__)
+app = Flask(__name__)
 
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
@@ -28,13 +28,6 @@ def swicthOne(number, status):
         GPIO.output(14, GPIO.LOW)
     elif status == 'off' and number == '2':
         GPIO.output(15, GPIO.LOW)
-    elif status == 'on' and number == None
-        GPIO.output(14, GPIO.HIGH)
-        GPIO.output(15, GPIO.HIGH)
-    elif status == 'off' and number == None
-        GPIO.output(14, GPIO.LOW)
-        GPIO.output(15, GPIO.LOW)
-
 
     return 'status %' % status, 'number %' % number
 
