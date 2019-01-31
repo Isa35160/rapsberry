@@ -32,7 +32,7 @@ def swicthOne(number, status):
     return 'status %s' % status, 'number %s' % number
 
 
-@app.route('/<status>')
+@app.route('/leds/<status>')
 def switchAll(status):
     if status == 'on':
         GPIO.output(14, GPIO.HIGH)
