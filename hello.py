@@ -12,7 +12,7 @@ GPIO.setup(15, GPIO.OUT)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return render_template('base.html')
 
 
 @app.route('/hello/<status>')
