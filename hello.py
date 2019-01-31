@@ -1,5 +1,5 @@
 from flask import Flask
-app = Flask(__name__)
+app = Flask(__status__)
 
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
@@ -12,19 +12,31 @@ GPIO.setup(15, GPIO.OUT)
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/hello/<name>')
-def hello(name):
-    return 'Hello %s' % name
+@app.route('/hello/<status>')
+def hello(status):
+    return 'Hello %s' % status
 
-@app.route('/led/<name>')
-def switch(name):
-    if name == 'on':
+@app.route('/led/<status>')
+def switch(status):
+    if status == 'on':
         GPIO.output(14, GPIO.HIGH)
         GPIO.output(15, GPIO.HIGH)
-    elif name == 'off' :
+    elif status == 'off' :
         GPIO.output(14, GPIO.LOW)
         GPIO.output(15, GPIO.LOW)
-    return 'Name %' % name
+    return 'status %' % status
+
+@app.route('/led/<number>/<status>')
+def swicthOne(number, status):
+    if status == 'on' and number == '1':
+        GPIO.output(14, GPIO.HIGH)
+    elif status == 'on' and number == '2':
+        GPIO.output(15, GPIO.HIGH)
+    elif status == 'off' and number == '1':
+        GPIO.output(14, GPIO.LOW)
+    elif status == 'off' and number == '2':
+        GPIO.output(15, GPIO.LOW)
+    return 'status %' % status, 'number %' % number
 
 
 
