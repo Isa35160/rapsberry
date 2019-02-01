@@ -18,11 +18,14 @@ while True:
      # Si le capteur est déclenché
     if currentstate == 1 and previousstate == 0:
         print("Mouvement détecté !")
+        GPIO.output(18, GPIO.HIGH)
         # En enregistrer l'état
         previousstate = 1
     # Si le capteur est s'est stabilisé
     elif currentstate == 0 and previousstate == 1:
         print("    Prêt")
+        GPIO.output(18, GPIO.LOW)
+
         previousstate = 0
     # On attends 10ms
     time.sleep(0.01)
