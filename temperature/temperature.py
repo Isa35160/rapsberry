@@ -3,6 +3,7 @@ import os
 import glob
 import time
 
+
 # Intialisation des broches
 os.system('modprobe w1-gpio')  # Allume le module 1wire
 os.system('modprobe w1-therm')  # Allume le module Temperature
@@ -26,7 +27,7 @@ class TemperatureSensor:
 
     # Lis la temperature
     def Convert(self):
-        choice = str(input('Choose your degrees Celsius or Fahrenheit (C or F) : \n'))
+        choice = str(input('Choose your degrees Celsius or Fahrenheit (1 or 2) : \n'))
         lines = self.read_temp_raw()  # Lit le fichier de température
         # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
         # On relis ensuite le fichier
@@ -36,34 +37,46 @@ class TemperatureSensor:
         # On cherche le '=' dans la seconde ligne du fichier
         equals_pos = lines[1].find('t=')
         # Si le '=' est trouvé, on converti ce qu'il y a après le '=' en degrées celcius
-        if equals_pos != -1 and choice == 'C':
+        if equals_pos != -1 and choice == '1':
             temp_string = lines[1][equals_pos + 2:]
             temp_c = float(temp_string) / 1000.0
             print(temp_c, 'degrés celscius')
-        elif equals_pos != -1 and choice == 'F':
+        elif equals_pos != -1 and choice == '2':
             temp_string = lines[1][equals_pos + 2:]
             temp_f = float(temp_string) / 1000.0 * 9 / 5 + 32
             print(temp_f, 'degrés fahrenheit')
-    #
-    # def ConvertFahrenheit(self):
-    #     lines = self.read_temp_raw()  # Lit le fichier de température
-    #     # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
-    #     # On relis ensuite le fichier
-    #     while lines[0].strip()[-3:] != 'YES':
-    #         time.sleep(0.2)
-    #         lines = self.read_temp_raw()
-    #     # On cherche le '=' dans la seconde ligne du fichier
-    #     equals_pos = lines[1].find('t=')
-    #     # Si le '=' est trouvé, on converti ce qu'il y a après le '=' en degrées celcius
-    #     if equals_pos != -1:
-    #         temp_string = lines[1][equals_pos + 2:]
-    #         temp_f = float(temp_string) / 1000.0*9/5+32
-    #         print(temp_f, 'degrés fahrenheit')
+
+    def WarningTemperature(self):
+        lines = self.read_temp_raw()  # Lit le fichier de température
+        # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
+        # On relis ensuite le fichier
+        while lines[0].strip()[-3:] != 'YES':
+            time.sleep(0.2)
+            lines = self.read_temp_raw()
+        # On cherche le '=' dans la seconde ligne du fichier
+        equals_pos = lines[1].find('t=')
+        # Si le '=' est trouvé, on converti ce qu'il y a après le '=' en degrées celcius
+        if equals_pos != -1:
+            temp_string = lines[1][equals_pos + 2:]
+            temp_c = float(temp_string) / 1000.0
+            if temp_c < 21:
+                print('il fait froid, il fait actuellement', temp_c)
+            elif 21 < temp_c < 21.5:
+                print('il fait bon il fait', temp_c)
+            else:
+                print('il fait chaud il fait', temp_c)
 
 
-tep= TemperatureSensor()
+
+
+
+
+
+
+tep = TemperatureSensor()
 tep.read_temp_raw()
-tep.Convert()
+tep.WarningTemperature()
+
 
 
 
