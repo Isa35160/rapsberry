@@ -1,4 +1,5 @@
 from flask import Flask
+
 app = Flask(__name__)
 app.debug = True
 
@@ -19,8 +20,6 @@ os.system('modprobe w1-therm')  # Allume le module Temperature
 
 # Chemin du fichier contenant la température (remplacer par votre valeur trouvée précédemment)
 device_file = '/sys/bus/w1/devices/28-01131a446afe/w1_slave'
-
-
 
 
 # @app.route('/')
@@ -54,7 +53,6 @@ class TemperatureSensor:
             temp_f = float(temp_string) / 1000.0 * 9 / 5 + 32
             print(temp_f, 'degrés fahrenheit')
 
-
     def WarningTemperature(self):
         lines = self.read_temp_raw()  # Lit le fichier de température
         # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
@@ -70,44 +68,43 @@ class TemperatureSensor:
             temp_c = float(temp_string) / 1000.0
 
             return temp_c
-            # if temp_c < 21:
-            #     return 'il fait froid, il fait actuellement', temp_c
-            # elif 21 < temp_c < 21.5:
-            #
-            #     return 'il fait bon il fait', temp_c
-            # else:
-            #     return 'il fait trop chaud :', temp_c
 
 
 tep = TemperatureSensor()
+
+
 # tep.read_temp_raw()
 # tep.WarningTemperature()
+
+
+class Leds:
+
+    def led_on(self, number):
+        if number == '1':
+            GPIO.output(18, GPIO.HIGH)
+        elif number == '2':
+            GPIO.output(23, GPIO.HIGH)
+
+    def led_of(self):
+        if led2:
+            GPIO.output(18, GPIO.LOW)
+            GPIO.output(23, GPIO.LOW)
+
+
+led1 = Leds()
+led2 = Leds()
+
 
 @app.route('/')
 def read_temp():
     temp_c = tep.WarningTemperature()
-    message = ''
     if temp_c < 15:
         message = 'froid'
-    elif 15 < temp_c < 20 :
-        message= 'bon'
+        led1.led_on('1')
+    elif 15 < temp_c < 20:
+        message = 'bon'
+        led2.led_of(True)
     else:
         message = 'chaud'
-    return render_template('temperature.html', message=message, temp_c=temp_c )
-
-
-
-# class Leds:
-
-
-@app.route('/led/<number>/<status>')
-def swicthOne(number, status):
-    if status == 'on' and number == '1':
-        GPIO.output(18, GPIO.HIGH)
-    elif status == 'on' and number == '2':
-        GPIO.output(23, GPIO.HIGH)
-    elif status == 'off' and number == '1':
-        GPIO.output(18, GPIO.LOW)
-    elif status == 'off' and number == '2':
-        GPIO.output(23, GPIO.LOW)
-    return render_template('test.html', status=status, number=number)
+        led1.led_on('2')
+    return render_template('temperature.html', message=message, temp_c=temp_c)
