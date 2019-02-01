@@ -16,6 +16,7 @@ os.system('modprobe w1-therm')  # Allume le module Temperature
 device_file = '/sys/bus/w1/devices/28-01131a446afe/w1_slave'
 
 
+@app.route('/')
 class TemperatureSensor:
 
     def read_temp_raw(self):
@@ -46,7 +47,6 @@ class TemperatureSensor:
             temp_f = float(temp_string) / 1000.0 * 9 / 5 + 32
             print(temp_f, 'degrés fahrenheit')
 
-    @app.route('/')
     def WarningTemperature(self):
         lines = self.read_temp_raw()  # Lit le fichier de température
         # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
@@ -68,10 +68,10 @@ class TemperatureSensor:
                 print('il fait chaud il fait', temp_c)
         return render_template('temperature.html', name=temp_c )
 
-tep = TemperatureSensor()
-tep.read_temp_raw()
-tep.WarningTemperature()
-
-
-
+# tep = TemperatureSensor()
+# tep.read_temp_raw()
+# tep.WarningTemperature()
+#
+#
+#
 
