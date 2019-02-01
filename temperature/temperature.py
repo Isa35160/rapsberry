@@ -85,10 +85,10 @@ class Leds:
         elif number == '2':
             GPIO.output(23, GPIO.HIGH)
 
-    def led_of(self):
-        if led2 == '1':
+    def led_of(self, number):
+        if number == '1':
             GPIO.output(18, GPIO.LOW)
-        elif led2 == '2':
+        elif number == '2':
             GPIO.output(23, GPIO.LOW)
 
 
