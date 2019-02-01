@@ -102,7 +102,7 @@ def read_temp():
     if temp_c < 15:
         message = 'froid'
         led1.led_on('2')
-        led1.led_of('1')
+        led2.led_of('1')
     elif 15 < temp_c < 20:
         message = 'bon'
         led2.led_of('1')
@@ -110,5 +110,5 @@ def read_temp():
     else:
         message = 'chaud'
         led1.led_on('1')
-        led1.led_of('2')
+        led2.led_of('2')
     return render_template('temperature.html', message=message, temp_c=temp_c)
