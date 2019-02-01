@@ -1,10 +1,10 @@
 from flask import Flask
 app = Flask(__name__)
+app.debug = True
 
 # Imports
 from flask import render_template
 import os
-import glob
 import time
 
 
@@ -16,11 +16,6 @@ os.system('modprobe w1-therm')  # Allume le module Temperature
 device_file = '/sys/bus/w1/devices/28-01131a446afe/w1_slave'
 
 
-# Une fonction qui lit dans le fichier température
-
-
-# Une fonction qui lit dans le fichier température
-
 class TemperatureSensor:
 
     def read_temp_raw(self):
@@ -30,7 +25,6 @@ class TemperatureSensor:
         return lines
 
     # Lis la temperature
-    @app.route('/temp')
     def Convert(self):
         choice = str(input('Choose your degrees Celsius or Fahrenheit (1 or 2) : \n'))
         lines = self.read_temp_raw()  # Lit le fichier de température
@@ -46,6 +40,7 @@ class TemperatureSensor:
             temp_string = lines[1][equals_pos + 2:]
             temp_c = float(temp_string) / 1000.0
             print(temp_c, 'degrés celscius')
+            # si choix fahreinheit
         elif equals_pos != -1 and choice == '2':
             temp_string = lines[1][equals_pos + 2:]
             temp_f = float(temp_string) / 1000.0 * 9 / 5 + 32
