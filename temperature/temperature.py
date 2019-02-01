@@ -47,7 +47,6 @@ class TemperatureSensor:
             print(temp_f, 'degrés fahrenheit')
 
     @app.route('/')
-    @app.route('/<temperature>')
     def WarningTemperature(self):
         lines = self.read_temp_raw()  # Lit le fichier de température
         # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
