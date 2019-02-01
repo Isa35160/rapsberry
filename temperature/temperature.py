@@ -100,11 +100,11 @@ def read_temp():
     temp_c = tep.WarningTemperature()
     if temp_c < 15:
         message = 'froid'
-        led1.led_on('1')
+        led1.led_on('2')
     elif 15 < temp_c < 20:
         message = 'bon'
         led2.led_of(True)
     else:
         message = 'chaud'
-        led1.led_on('2')
+        led1.led_on('1')
     return render_template('temperature.html', message=message, temp_c=temp_c)
