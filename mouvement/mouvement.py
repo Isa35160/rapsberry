@@ -6,7 +6,7 @@ import time
 broche = 17
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-GPIO.setup(broche, GPIO.IN)
+GPIO.setup(broche, GPIO.OUT)
 
 currentstate = 0
 previousstate = 0
