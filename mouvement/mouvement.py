@@ -28,4 +28,3 @@ while True:
 
         previousstate = 0
     # On attends 10ms
-    time.sleep(0.01)
