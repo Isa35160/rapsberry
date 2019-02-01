@@ -84,11 +84,11 @@ def read_temp():
 @app.route('/led/<number>/<status>')
 def swicthOne(number, status):
     if status == 'on' and number == '1':
-        GPIO.output(14, GPIO.HIGH)
+        GPIO.output(18, GPIO.HIGH)
     elif status == 'on' and number == '2':
-        GPIO.output(15, GPIO.HIGH)
+        GPIO.output(23, GPIO.HIGH)
     elif status == 'off' and number == '1':
-        GPIO.output(14, GPIO.LOW)
+        GPIO.output(18, GPIO.LOW)
     elif status == 'off' and number == '2':
-        GPIO.output(15, GPIO.LOW)
+        GPIO.output(23, GPIO.LOW)
     return render_template('test.html', status=status, number=number)
