@@ -86,8 +86,9 @@ class Leds:
             GPIO.output(23, GPIO.HIGH)
 
     def led_of(self):
-        if led2:
+        if led2 == '1':
             GPIO.output(18, GPIO.LOW)
+        elif led2 == '2':
             GPIO.output(23, GPIO.LOW)
 
 
@@ -101,10 +102,13 @@ def read_temp():
     if temp_c < 15:
         message = 'froid'
         led1.led_on('2')
+        led1.led_of('1')
     elif 15 < temp_c < 20:
         message = 'bon'
-        led2.led_of(True)
+        led2.led_of('1')
+        led2.led_of('2')
     else:
         message = 'chaud'
         led1.led_on('1')
+        led1.led_of('2')
     return render_template('temperature.html', message=message, temp_c=temp_c)
