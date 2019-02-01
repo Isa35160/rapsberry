@@ -8,6 +8,8 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(broche, GPIO.IN)
 GPIO.setup(18, GPIO.OUT)
+GPIO.setup(22, GPIO.OUT)
+
 currentstate = 0
 previousstate = 0
 
@@ -18,12 +20,15 @@ while True:
      # Si le capteur est déclenché
     if currentstate == 1 and previousstate == 0:
         GPIO.output(18, GPIO.HIGH)
+        GPIO.output(22, GPIO.HIGH)
+        time.sleep(1)
+        GPIO.output(18, GPIO.LOW)
+        GPIO.output(22, GPIO.LOW)
         print("Mouvement détecté !")
         # En enregistrer l'état
         previousstate = 1
     # Si le capteur est s'est stabilisé
     elif currentstate == 0 and previousstate == 1:
-        GPIO.output(18, GPIO.LOW)
         print("    Prêt")
 
         previousstate = 0
