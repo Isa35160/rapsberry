@@ -103,7 +103,7 @@ def read_temp():
         message = 'froid'
         led1.led_on('2')
         led2.led_of('1')
-    elif 15 < temp_c < 20:
+    elif 15 <= temp_c < 20:
         message = 'bon'
         led2.led_of('1')
         led2.led_of('2')
