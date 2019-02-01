@@ -62,7 +62,7 @@ class TemperatureSensor:
         # Si le '=' est trouvé, on converti ce qu'il y a après le '=' en degrées celcius
         if equals_pos != -1:
             temp_string = lines[1][equals_pos + 2:]
-            temp_c = round(temp_string) / 1000.0
+            temp_c = float(temp_string) / 1000.0
 
         return temp_c
 
