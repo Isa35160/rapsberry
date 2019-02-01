@@ -72,7 +72,7 @@ class TemperatureSensor:
                 print('il fait bon il fait', temp_c)
             else:
                 print('il fait chaud il fait', temp_c)
-        return render_template('temperature.html', name=temperature )
+        return render_template('temperature.html', name=temp_c )
 
 tep = TemperatureSensor()
 tep.read_temp_raw()
