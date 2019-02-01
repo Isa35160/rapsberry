@@ -6,7 +6,12 @@ app.debug = True
 from flask import render_template
 import os
 import time
+import RPi.GPIO as GPIO
 
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(18, GPIO.OUT)
+GPIO.setup(23, GPIO.OUT)
 
 # Intialisation des broches
 os.system('modprobe w1-gpio')  # Allume le module 1wire
@@ -74,3 +79,16 @@ tep = TemperatureSensor()
 def read_temp():
     temp_c = tep.WarningTemperature()
     return render_template('temperature.html', name=temp_c)
+
+
+@app.route('/led/<number>/<status>')
+def swicthOne(number, status):
+    if status == 'on' and number == '1':
+        GPIO.output(14, GPIO.HIGH)
+    elif status == 'on' and number == '2':
+        GPIO.output(15, GPIO.HIGH)
+    elif status == 'off' and number == '1':
+        GPIO.output(14, GPIO.LOW)
+    elif status == 'off' and number == '2':
+        GPIO.output(15, GPIO.LOW)
+    return render_template('test.html', status=status, number=number)
