@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 {%block content %}
 <h1>Température</h1>
-{{ name }}
+{% if name < 21 %}
+    <p>Il fait super froid, il fait {{name}}</p>
+{% elif 21 < name < 21.5 %}
+    <p>Il fait bon, il fait {{name}}</p>
+{% else %}
+    <p>Il fait {{ name }}, il fait trop chaud</p>
+{% endif %}
+
 {% endblock %}}
