@@ -13,15 +13,19 @@ device_file = '/sys/bus/w1/devices/28-01131a446afe/w1_slave'
 
 # Une fonction qui lit dans le fichier température
 
+
+# Une fonction qui lit dans le fichier température
+
 class TemperatureSensor:
 
     def read_temp_raw(self):
-        f = open(device_file, 'r')  # Ouvre le fichier
+        f = open(device_file, 'r')  # Ouvre le dichier
         lines = f.readlines()  # Returns the text
         f.close()
         return lines
 
-    def convert(self):
+    # Lis la temperature
+    def read_temp(self):
         lines = self.read_temp_raw()  # Lit le fichier de température
         # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
         # On relis ensuite le fichier
@@ -34,11 +38,11 @@ class TemperatureSensor:
         if equals_pos != -1:
             temp_string = lines[1][equals_pos + 2:]
             temp_c = float(temp_string) / 1000.0
-            print(temp_c)
+            return temp_c
 
 
 TemperatureSensor.read_temp_raw()
-TemperatureSensor.convert()
+TemperatureSensor.read_temp()
 
 
 
