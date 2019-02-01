@@ -68,12 +68,15 @@ class TemperatureSensor:
         if equals_pos != -1:
             temp_string = lines[1][equals_pos + 2:]
             temp_c = float(temp_string) / 1000.0
-            if temp_c < 21:
-                return 'il fait froid, il fait actuellement', temp_c
-            elif 21 < temp_c < 21.5:
-                return 'il fait bon il fait', temp_c
-            else:
-                return 'il fait trop chaud :', temp_c
+
+            return temp_c
+            # if temp_c < 21:
+            #     return 'il fait froid, il fait actuellement', temp_c
+            # elif 21 < temp_c < 21.5:
+            #
+            #     return 'il fait bon il fait', temp_c
+            # else:
+            #     return 'il fait trop chaud :', temp_c
 
 
 tep = TemperatureSensor()
@@ -83,7 +86,18 @@ tep = TemperatureSensor()
 @app.route('/')
 def read_temp():
     temp_c = tep.WarningTemperature()
-    return render_template('temperature.html', name=temp_c)
+    message = ''
+    if temp_c < 15:
+        message = 'froid'
+    elif 15 < temp_c < 20 :
+        message= 'bon'
+    else:
+        message = 'chaud'
+    return render_template('temperature.html', message=message, temp_c=temp_c )
+
+
+
+# class Leds:
 
 
 @app.route('/led/<number>/<status>')
