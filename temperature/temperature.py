@@ -99,11 +99,11 @@ led2 = Leds()
 @app.route('/')
 def read_temp():
     temp_c = tep.WarningTemperature()
-    if temp_c < 15:
+    if temp_c < 18:
         message = 'froid'
         led1.led_on('2')
         led2.led_of('1')
-    elif 15 <= temp_c < 20:
+    elif 18 <= temp_c < 20:
         message = 'bon'
         led2.led_of('1')
         led2.led_of('2')
