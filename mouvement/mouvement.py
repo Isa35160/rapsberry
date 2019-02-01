@@ -3,7 +3,7 @@ import time
 
 # Initialisation de notre GPIO 17 pour recevoir un signal
 # Contrairement à nos LEDs avec lesquelles on envoyait un signal
-broche = 18
+broche = 17
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(broche, GPIO.IN)
@@ -17,14 +17,14 @@ while True:
     currentstate = GPIO.input(broche)
      # Si le capteur est déclenché
     if currentstate == 1 and previousstate == 0:
+        GPIO.output(broche, GPIO.HIGH)
         print("Mouvement détecté !")
-        GPIO.output(18, GPIO.HIGH)
         # En enregistrer l'état
         previousstate = 1
     # Si le capteur est s'est stabilisé
     elif currentstate == 0 and previousstate == 1:
+        GPIO.output(broche, GPIO.LOW)
         print("    Prêt")
-        GPIO.output(18, GPIO.LOW)
 
         previousstate = 0
     # On attends 10ms
