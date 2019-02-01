@@ -1,4 +1,8 @@
+from flask import Flask
+app = Flask(__name__)
+
 # Imports
+from flask import render_template
 import os
 import glob
 import time
@@ -26,6 +30,7 @@ class TemperatureSensor:
         return lines
 
     # Lis la temperature
+    @app.route('/temp')
     def Convert(self):
         choice = str(input('Choose your degrees Celsius or Fahrenheit (1 or 2) : \n'))
         lines = self.read_temp_raw()  # Lit le fichier de température
@@ -46,6 +51,8 @@ class TemperatureSensor:
             temp_f = float(temp_string) / 1000.0 * 9 / 5 + 32
             print(temp_f, 'degrés fahrenheit')
 
+    @app.route('/')
+    @app.route('/<temperature>')
     def WarningTemperature(self):
         lines = self.read_temp_raw()  # Lit le fichier de température
         # Tant que la première ligne ne vaut pas 'YES', on attend 0,2s
@@ -65,13 +72,7 @@ class TemperatureSensor:
                 print('il fait bon il fait', temp_c)
             else:
                 print('il fait chaud il fait', temp_c)
-
-
-
-
-
-
-
+        return render_template('temperature.html', name=temperature )
 
 tep = TemperatureSensor()
 tep.read_temp_raw()

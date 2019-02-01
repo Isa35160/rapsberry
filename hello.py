@@ -45,4 +45,4 @@ def switchAll(status):
         GPIO.output(15, GPIO.LOW)
         print("Led OFF")
 
-    return render_template('base.html', status=status)
+    return render_template('base.html', name=status)
