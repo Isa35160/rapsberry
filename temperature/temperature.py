@@ -41,8 +41,9 @@ class TemperatureSensor:
             return temp_c
 
 
-TemperatureSensor.read_temp_raw()
-TemperatureSensor.read_temp()
+tep= TemperatureSensor()
+tep.read_temp_raw()
+tep.read_temp()
 
 
 
