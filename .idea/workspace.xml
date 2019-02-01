@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="78735b95-f483-4f8f-8a6b-2b805590ca21" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Java_cours/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temperature/leds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temperature/tempsensor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouvement/mouvement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare-back/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare-back/.env.test" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare-back/.gitignore" beforeDir="false" />
@@ -78,8 +77,6 @@
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temperature/temperature.py" beforeDir="false" afterPath="$PROJECT_DIR$/temperature/temperature.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,66 +89,9 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="31" column="33" selection-start-line="24" selection-start-column="4" selection-end-line="31" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temperature/temperature.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temperature/tempsensor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/temperature/leds.py">
+        <entry file="file://$PROJECT_DIR$/mouvement/mouvement.py">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temperature/templates/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temperature/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temperature/templates/temperature.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -186,8 +126,9 @@
         <option value="$PROJECT_DIR$/temperature/templates/temperature.html" />
         <option value="$PROJECT_DIR$/temperature/Leds.py" />
         <option value="$PROJECT_DIR$/temperature/tempsensor.py" />
-        <option value="$PROJECT_DIR$/temperature/temperature.py" />
         <option value="$PROJECT_DIR$/temperature/leds.py" />
+        <option value="$PROJECT_DIR$/temperature/temperature.py" />
+        <option value="$PROJECT_DIR$/mouvement/mouvement.py" />
       </list>
     </option>
   </component>
@@ -310,12 +251,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548941299533</updated>
       <workItem from="1548941432850" duration="745000" />
-      <workItem from="1549010682908" duration="18642000" />
+      <workItem from="1549010682908" duration="20078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24791000" />
+    <option name="totallyTimeSpent" value="26227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -386,41 +327,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/temperature/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temperature/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="31" column="33" selection-start-line="24" selection-start-column="4" selection-end-line="31" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temperature/templates/temperature.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temperature/temperature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temperature/tempsensor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -432,6 +338,48 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temperature/leds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temperature/temperature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="31" column="33" selection-start-line="24" selection-start-column="4" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temperature/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temperature/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temperature/templates/temperature.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouvement/mouvement.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
