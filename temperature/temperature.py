@@ -14,8 +14,6 @@ device_file = '/sys/bus/w1/devices/28-01131a446afe/w1_slave'
 # Une fonction qui lit dans le fichier température
 
 class TemperatureSensor:
-    def __init__(self, temperature):
-        self.temperature = temperature
 
     def read_temp_raw(self):
         f = open(device_file, 'r')  # Ouvre le fichier
