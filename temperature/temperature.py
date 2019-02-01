@@ -40,6 +40,9 @@ class TemperatureSensor:
             temp_c = float(temp_string) / 1000.0
             return temp_c
 
+    while True:
+        print(read_temp())
+        time.sleep(1)
 
 tep= TemperatureSensor()
 tep.read_temp_raw()
