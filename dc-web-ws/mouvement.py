@@ -1,8 +1,6 @@
 import RPi.GPIO as GPIO
 import time
 
-# Initialisation de notre GPIO 17 pour recevoir un signal
-# Contrairement à nos LEDs avec lesquelles on envoyait un signal
 
 class Mouvement():
     broche = 17

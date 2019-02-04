@@ -11,7 +11,7 @@ $(function () {
 
 	socket.on('alert', function (data) {
     	$('#status').text('Connecté');
-        $('#content').append(data + "<br />");
+        // $('#content').append(data + "<br />");
 	});
 });
 

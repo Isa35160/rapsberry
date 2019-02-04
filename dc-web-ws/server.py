@@ -18,12 +18,8 @@ def index():
 
 
 def message_loop():
-    while True:
         socketio.emit('alert', Broadcast=True)
         movementText.emit('moveAlert', Broadcast=True)
-
-
-
 
 
 move = Mouvement()
