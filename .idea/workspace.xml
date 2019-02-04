@@ -78,7 +78,6 @@
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dc-web-ws/mouvement.py" beforeDir="false" afterPath="$PROJECT_DIR$/dc-web-ws/mouvement.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,11 +90,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dc-web-ws/mouvement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="449">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -115,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dc-web-ws/static/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="378">
               <caret line="21" column="27" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="27" />
             </state>
           </provider>
@@ -295,12 +294,12 @@
       <updated>1548941299533</updated>
       <workItem from="1548941432850" duration="745000" />
       <workItem from="1549010682908" duration="22024000" />
-      <workItem from="1549267238488" duration="9330000" />
+      <workItem from="1549267238488" duration="9644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37503000" />
+    <option name="totallyTimeSpent" value="37817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -461,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dc-web-ws/static/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dc-web-ws/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -477,11 +469,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dc-web-ws/mouvement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        <state relative-caret-position="449">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dc-web-ws/static/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>

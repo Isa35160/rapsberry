@@ -21,8 +21,7 @@ def message_loop():
     while True:
         socketio.emit('alert', Broadcast=True)
         movementText.emit('MoveOn', 'mouvement détecté', Broadcast=True)
-
-
+        movementText.emit('MoveOff', 'aucun mouvement', Broadcast=True)
 
 move = Mouvement()
 # Vue que notre méthode pour lire nos message est une boucle infinie
