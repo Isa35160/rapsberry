@@ -7,11 +7,12 @@ class Mouvement():
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
     GPIO.setup(broche, GPIO.IN)
-    # Pinout led
+    # Pinout leds
     GPIO.setup(18, GPIO.OUT)
+    GPIO.setup(24, GPIO.OUT)
 
 
-    def detectMove(self):
+    def DetectMove(self):
         previousstate = 0
 
         while True:
@@ -19,12 +20,12 @@ class Mouvement():
             currentstate = GPIO.input(self.broche)
             # Si le capteur est déclenché
             if currentstate == 1 and previousstate == 0:
-                GPIO.output(24 , GPIO.LOW)
+                GPIO.output(24, GPIO.LOW)
                 GPIO.output(18, GPIO.HIGH)
                 time.sleep(2)
                 # En enregistrer l'état
                 previousstate = 1
-            # Si le capteur est s'est stabilisé
+            # Si le capteur est stabilisé
             elif currentstate == 0 and previousstate == 1:
                 GPIO.output(18, GPIO.LOW)
                 GPIO.output(24, GPIO.HIGH)
