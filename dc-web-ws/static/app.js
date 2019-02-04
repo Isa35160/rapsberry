@@ -9,8 +9,8 @@ $(function () {
 		$('#mouvementDetect').text('Mouvement détecté');
 	});
 
-	socket.on('TempLive', function () {
-		$('#tempDetect').text(temp_c)
+	socket.on('TempLive', function (data) {
+		$('#tempDetect').text(data)
 	})
 
 	socket.on('disconnect', function() {
