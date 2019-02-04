@@ -22,14 +22,14 @@ class Mouvement():
             if currentstate == 1 and previousstate == 0:
                 GPIO.output(24, GPIO.LOW)
                 GPIO.output(18, GPIO.HIGH)
-                time.sleep(2)
+                time.sleep(0.1)
                 # En enregistrer l'état
                 previousstate = 1
             # Si le capteur est stabilisé
             elif currentstate == 0 and previousstate == 1:
                 GPIO.output(18, GPIO.LOW)
                 GPIO.output(24, GPIO.HIGH)
-                time.sleep(2)
+                time.sleep(0.1)
                 previousstate = 0
             # On attends 10ms
 
