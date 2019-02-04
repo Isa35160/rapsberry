@@ -78,7 +78,6 @@
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dc-web-ws/mouvement.py" beforeDir="false" afterPath="$PROJECT_DIR$/dc-web-ws/mouvement.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,11 +90,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dc-web-ws/mouvement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="152">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -118,17 +117,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dc-web-ws/static/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="399">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dc-web-ws/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+            <state relative-caret-position="350">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -178,6 +177,7 @@
         <option value="$PROJECT_DIR$/dc-web-ws/server.py" />
         <option value="$PROJECT_DIR$/dc-web-ws/static/app.js" />
         <option value="$PROJECT_DIR$/dc-web-ws/mouvement.py" />
+        <option value="$PROJECT_DIR$/dc-web-ws/templates/index.html" />
       </list>
     </option>
   </component>
@@ -294,15 +294,15 @@
       <updated>1548941299533</updated>
       <workItem from="1548941432850" duration="745000" />
       <workItem from="1549010682908" duration="22024000" />
-      <workItem from="1549267238488" duration="8453000" />
+      <workItem from="1549267238488" duration="8787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36626000" />
+    <option name="totallyTimeSpent" value="36960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.122068234" />
@@ -316,7 +316,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32998884" />
@@ -460,27 +460,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dc-web-ws/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/dc-web-ws/mouvement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        <state relative-caret-position="152">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dc-web-ws/static/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="399">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dc-web-ws/mouvement.py">
+    <entry file="file://$PROJECT_DIR$/dc-web-ws/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
