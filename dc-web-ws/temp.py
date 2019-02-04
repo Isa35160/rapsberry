@@ -8,7 +8,7 @@ os.system('modprobe w1-gpio')  # Allume le module 1wire
 os.system('modprobe w1-therm')  # Allume le module Temperature
 
 # Chemin du fichier contenant la température (remplacer par votre valeur trouvée précédemment)
-device_file = '/sys/bus/w1/devices/28-01131a446afe/w1_slave'
+device_file = '/sys/bus/w1/devices/28-021313bf0eaa/w1_slave'
 
 
 # Une fonction qui lit dans le fichier température

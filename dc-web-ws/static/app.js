@@ -9,6 +9,9 @@ $(function () {
 		$('#mouvementDetect').text('Mouvement détecté');
 	});
 
+	socket.on('TempLive', function () {
+		$('#tempDetect').text('Il fait', temp_c)
+	})
 	socket.on('disconnect', function() {
 		$('#status').text('Déconnecté');
 	});
@@ -17,7 +20,6 @@ $(function () {
     // 	$('#status').text('Connecté');
     //     $('#content').append(data + "<br />");
 	// });
-
 	socket.on('MoveOff', function () {
 		$('#mouvementDetect').text('Aucun mouvements');
 
