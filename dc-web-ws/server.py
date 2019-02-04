@@ -32,6 +32,8 @@ move = Mouvement()
 # Ici nous créons un Thread qui va permettre à notre fonction de se lancer
 # en parallèle du serveur.
 read_messages = threading.Thread(target=message_loop)
+detect = threading.Thread(target=move.detectMove)
 read_messages.start()
-move.detectMove()
+detect.start()
+
 
