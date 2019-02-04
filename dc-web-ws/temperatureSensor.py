@@ -32,5 +32,4 @@ class TemperatureSensor:
             temp_string = lines[1][equals_pos + 2:]
             temp_c = float(temp_string) / 1000.0
             socketIo.emit('TempLive', temp_c, Broadcast=True)
-            return temp_c
 

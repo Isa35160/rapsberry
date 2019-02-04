@@ -33,5 +33,6 @@ detect = threading.Thread(target=move.detectMove, args=(socketio,))
 temp = threading.Thread(target=tempSens.readTempLive, args=(socketio,))
 # read_messages.start()
 detect.start()
+temp.start()
 
 

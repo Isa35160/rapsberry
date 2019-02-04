@@ -10,16 +10,13 @@ $(function () {
 	});
 
 	socket.on('TempLive', function () {
-		$('#tempDetect').text('Il fait', temp_c)
+		$('#tempDetect').text(temp_c)
 	})
+
 	socket.on('disconnect', function() {
 		$('#status').text('Déconnecté');
 	});
-	//
-	// socket.on('alert', function (data) {
-    // 	$('#status').text('Connecté');
-    //     $('#content').append(data + "<br />");
-	// });
+
 	socket.on('MoveOff', function () {
 		$('#mouvementDetect').text('Aucun mouvements');
 
