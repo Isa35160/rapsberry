@@ -12,7 +12,7 @@ class Mouvement():
     GPIO.setup(24, GPIO.OUT)
 
 
-    def DetectMove(self):
+    def detectMove(self):
         previousstate = 0
 
         while True:
