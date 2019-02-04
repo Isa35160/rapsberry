@@ -10,27 +10,26 @@ from mouvement import Mouvement
 
 app = Flask(__name__)
 socketio = SocketIO(app)
-movementText = SocketIO(app)
+
 
 @app.route("/")
 def index():
     return render_template('index.html')
 
 
-def message_loop():
-    while True:
-        socketio.emit('alert', Broadcast=True)
-        movementText.emit('MoveOn', 'mouvement détecté', Broadcast=True)
-        movementText.emit('MoveOff', 'aucun mouvement', Broadcast=True)
+# def message_loop():
+#     while True:
+#         socketio.emit('alert', Broadcast=True)
+#
 
 move = Mouvement()
 # Vue que notre méthode pour lire nos message est une boucle infinie
 # Elle bloquerait notre serveur. Qui ne pourrait répondre à aucune requête.
 # Ici nous créons un Thread qui va permettre à notre fonction de se lancer
 # en parallèle du serveur.
-read_messages = threading.Thread(target=message_loop)
-detect = threading.Thread(target=move.detectMove)
-read_messages.start()
+# read_messages = threading.Thread(target=message_loop)
+detect = threading.Thread(target=move.detectMove, args=(socketio,))
+# read_messages.start()
 detect.start()
 
 
