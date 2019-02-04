@@ -27,9 +27,9 @@ $(function () {
 		$('#mouvementDetect').text('No move');
 	});
 
-	movementText.on('moveAlert', function (data) {
+	movementText.on('moveAlert', function (dataM) {
     	$('#mouvementDetect').text('Mouvement détecté');
-        $('#content').append(data + "<br />");
+        $('#content').append(dataM + "<br />");
 	});
 });
 

@@ -23,7 +23,7 @@ class Mouvement():
             if currentstate == 1 and previousstate == 0:
                 GPIO.output(18, GPIO.HIGH)
                 GPIO.output(22, GPIO.HIGH)
-                time.sleep(1)
+                time.sleep(5)
                 GPIO.output(18, GPIO.LOW)
                 GPIO.output(22, GPIO.LOW)
                 # print("Mouvement détecté !")
