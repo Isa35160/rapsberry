@@ -20,7 +20,8 @@ def index():
 def message_loop():
     while True:
         socketio.emit('alert', Broadcast=True)
-        movementText.emit('moveAlert', Broadcast=True)
+        movementText.emit('MoveOn', 'mouvement détecté', Broadcast=True)
+
 
 
 move = Mouvement()
