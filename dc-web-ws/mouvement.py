@@ -1,6 +1,9 @@
 import RPi.GPIO as GPIO
 import time
+from leds import Leds
 
+
+leds = Leds()
 
 class Mouvement():
     broche = 17
@@ -14,24 +17,19 @@ class Mouvement():
 
     def detectMove(self, socketIo):
         previousstate = 0
-
         while True:
             # Lecture du capteur
-            currentstate = GPIO.input(self.broche)
+            currentstate = GPIO.input(self.broche,)
             # Si le capteur est déclenché
             if currentstate == 1 and previousstate == 0:
-                GPIO.output(24, GPIO.LOW)
-                GPIO.output(18, GPIO.HIGH)
-                time.sleep(0.1)
                 socketIo.emit('MoveOn', 'mouvement détecté', Broadcast=True)
+                leds.led_on('1')
                 # En enregistrer l'état
                 previousstate = 1
             # Si le capteur est stabilisé
             elif currentstate == 0 and previousstate == 1:
-                GPIO.output(18, GPIO.LOW)
-                GPIO.output(24, GPIO.HIGH)
-                time.sleep(0.1)
                 socketIo.emit('MoveOff', 'aucun mouvement', Broadcast=True)
+                leds.led_on('2')
                 previousstate = 0
             # On attends 10ms
 
