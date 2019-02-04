@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="78735b95-f483-4f8f-8a6b-2b805590ca21" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Java_cours/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../www.crea-tion.com/wp-content/themes/creatheme/front-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../www.crea-tion.fr/wp-content/themes/creationtheme/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare-back/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare-back/.env.test" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare-back/.gitignore" beforeDir="false" />
@@ -76,7 +78,8 @@
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Javascript/expenshare/expenshare-front/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/exercice/poo/medialibrary/Medialib/Media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mouvement/mouvement.py" beforeDir="false" afterPath="$PROJECT_DIR$/mouvement/mouvement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/site-packages/easy-install.pth" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,11 +92,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mouvement/mouvement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-26">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="290">
+              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -102,10 +105,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mouvement/dc-web-ws/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mouvement/dc-web-ws/static/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temperature/leds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+            <state relative-caret-position="209">
+              <caret line="11" column="38" selection-start-line="11" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -117,6 +141,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -145,6 +170,8 @@
         <option value="$PROJECT_DIR$/temperature/temperature.py" />
         <option value="$PROJECT_DIR$/temperature/leds.py" />
         <option value="$PROJECT_DIR$/mouvement/mouvement.py" />
+        <option value="$PROJECT_DIR$/mouvement/dc-web-ws/server.py" />
+        <option value="$PROJECT_DIR$/mouvement/dc-web-ws/app.js" />
       </list>
     </option>
   </component>
@@ -160,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,6 +199,17 @@
               <item name="raspberry" type="b2602c69:ProjectViewProjectNode" />
               <item name="raspberry" type="462c0819:PsiDirectoryNode" />
               <item name="led" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raspberry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raspberry" type="462c0819:PsiDirectoryNode" />
+              <item name="mouvement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raspberry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raspberry" type="462c0819:PsiDirectoryNode" />
+              <item name="mouvement" type="462c0819:PsiDirectoryNode" />
+              <item name="dc-web-ws" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="raspberry" type="b2602c69:ProjectViewProjectNode" />
@@ -198,7 +237,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,17 +305,18 @@
       <option name="presentableId" value="Default" />
       <updated>1548941299533</updated>
       <workItem from="1548941432850" duration="745000" />
-      <workItem from="1549010682908" duration="20632000" />
+      <workItem from="1549010682908" duration="22024000" />
+      <workItem from="1549267238488" duration="1716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26781000" />
+    <option name="totallyTimeSpent" value="29889000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122068234" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -290,9 +329,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5010661" side_tool="true" weight="0.33333334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -389,18 +428,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temperature/leds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+        <state relative-caret-position="209">
+          <caret line="11" column="38" selection-start-line="11" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mouvement/mouvement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="290">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouvement/dc-web-ws/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouvement/dc-web-ws/static/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>
